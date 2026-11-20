@@ -8,8 +8,12 @@ A pure-stdlib Python program that draws one newspaper front page summing up Frid
 
 ## Run it
 
+The program needs nothing but Python 3. It reads no files and no
+network; it writes `entry.png` into the directory named by
+`MAKEFUN_OUTPUT_DIR` (or `/output` when that is unset):
+
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
 ---
